@@ -9,5 +9,12 @@
 - Add error handling
 - Add loading state
 - Add validation
+
 - Add Redux-toolkit in my app
 - and make the UserSlice and provide store to my app
+
+- make mockData for frontend using mockApi "https://68863712f52d34140f6bb0f0.mockapi.io/crud"
+
+- make form for user fill the data
+
+- add bootStrap into project
