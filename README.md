@@ -9,3 +9,5 @@
 - Add error handling
 - Add loading state
 - Add validation
+- Add Redux-toolkit in my app
+- and make the UserSlice and provide store to my app
