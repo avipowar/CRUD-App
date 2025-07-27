@@ -15,6 +15,9 @@
 
 - make mockData for frontend using mockApi "https://68863712f52d34140f6bb0f0.mockapi.io/crud"
 
-- make form for user fill the data
+# create navbar
 
-- add bootStrap into project
+    - add app name
+    - crate post
+    - display all the post
+    - search bar
