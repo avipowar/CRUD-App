@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import CreateForm from "./components/CreateForm";
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
       <Navbar />
-      <CreateForm />
+      <Routes>
+        <Route path="/" element={<CreateForm />} />
+      </Routes>
     </>
   );
 }

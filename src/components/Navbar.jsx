@@ -1,20 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="border border-gray-300 flex px-6 py-6 items-center justify-between shadow-lg">
       <div className="flex items-center gap-15">
         {/* App Name */}
-        <div className="text-2xl font-bold text-orange-400">CRUD APP</div>
+        <Link to={"/"}>
+          <div className="text-2xl font-bold text-orange-400">CRUD APP</div>
+        </Link>
 
         {/* Links */}
         <div className="flex gap-15">
-          <a
-            href="/create"
+          <Link
+            to="/"
             className="hover:underline text-orange-400 text-lg font-medium"
           >
             Create Post
-          </a>
+          </Link>
           <a
             href="post"
             className="hover:underline text-orange-400 text-lg font-medium"
