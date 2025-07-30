@@ -2,10 +2,11 @@ import React from "react";
 import { useState } from "react";
 
 const CreateForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [age, setAge] = useState("");
-  const [gender, setGender] = useState("");
+  const [user, setUser] = useState({});
+
+  const getUserData = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
 
   //   stop the page reloading
   const handleSubmit = (e) => {
@@ -25,8 +26,8 @@ const CreateForm = () => {
         </label>
         <input
           type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          name="name"
+          onChange={getUserData}
           className="w-full  p-2 border border-gray-300 rounded outline-none"
         />
       </div>
@@ -35,9 +36,9 @@ const CreateForm = () => {
           Email:
         </label>
         <input
-          type="text"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          type="email"
+          name="email"
+          onChange={getUserData}
           className="w-full  p-2 border border-gray-300 rounded outline-none"
         />
       </div>
@@ -46,9 +47,9 @@ const CreateForm = () => {
           Age:
         </label>
         <input
-          type="text"
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
+          type="number"
+          name="age"
+          onChange={getUserData}
           className="w-full  p-2 border border-gray-300 rounded outline-none"
         />
       </div>
@@ -58,15 +59,15 @@ const CreateForm = () => {
         </label>
         <select
           type="text"
-          value={gender}
-          onChange={(e) => setGender(e.target.value)}
+          name="gender"
+          onChange={getUserData}
           className="w-full  p-2 border border-gray-300 rounded outline-none"
         >
-          <option value="" disabled>
+          <option value="" hidden>
             Select Gender
           </option>
           <option value="male">Male</option>
-          <option value="female">Femeale</option>
+          <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
       </div>

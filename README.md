@@ -29,3 +29,5 @@
 # install react-router-dom
 
 - create a path
+
+# create a multiple useState instead of we use on useState and update the all the data

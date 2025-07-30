@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="border border-gray-300 flex px-6 py-6 items-center justify-between shadow-lg">
       <div className="flex items-center gap-15">
         {/* App Name */}
-        <Link to={"/"}>
+        <Link>
           <div className="text-2xl font-bold text-orange-400">CRUD APP</div>
         </Link>
 
