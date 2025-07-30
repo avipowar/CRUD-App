@@ -17,7 +17,11 @@
 
 # create navbar
 
-    - add app name
-    - crate post
-    - display all the post
-    - search bar
+- add app name
+- crate post
+- display all the post
+- search bar
+
+# Create Form
+
+- Form is noting but its simple CRUD application
