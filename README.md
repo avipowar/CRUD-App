@@ -31,3 +31,10 @@
 - create a path
 
 # create a multiple useState instead of we use on useState and update the all the data
+
+# make api call using AsyncThunk(middleware)
+
+- add data in the backend using post method
+- manage the extruder using builder
+- add addCase to matches the actiontype
+- handle promise

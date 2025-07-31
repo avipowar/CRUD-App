@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { createUser } from "../features/userSlice";
 
 const CreateForm = () => {
   const [user, setUser] = useState({});
@@ -8,9 +10,13 @@ const CreateForm = () => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  //   stop the page reloading
+  // Dispatch The Action
+  const dispatch = useDispatch();
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(user);
+    dispatch(createUser(user));
   };
 
   return (
@@ -72,10 +78,10 @@ const CreateForm = () => {
         </select>
       </div>
 
-      <div className="text-center mt-6">
+      <div className="text-center mt-6 ">
         <button
           type="submit"
-          className="bg-orange-400 text-white px-4 py-2 rounded-md"
+          className="bg-orange-400 text-white px-4 py-2 rounded-md cursor-pointer"
         >
           Submit
         </button>
